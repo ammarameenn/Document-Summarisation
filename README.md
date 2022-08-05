@@ -1,5 +1,5 @@
 # Document-Summarisation
-Text generation, which could be used, for instance, in text summarization, is one of the difficulties in natural language processing and comprehension. Actually, it entails comprehending the information a text conveys and condensing it into a brief summary that incorporates the essential, pertinent information.
+Text generation, which could be used, for instance, in text summarization, is one of the difficulties in natural language processing and comprehension. Actually, it entails comprehending the information a text conveys and condensing it into a brief summary that incorporates the essential, pertinent information. It is obvious that a model works effectively on a text that is condensed and has just clear information and little noise. In this situation, we can use some extractive summarizers as the input of the summarization model to extract significant portions from a given text. I decided to use TFIDF vectoriser to condense the text and extract the most crucial sentences.
 This repository will walk you through two different approaches for summarizing text named abstractive and extractive summarisation using very famous techniques TF-IDF and transfer learning.
 ## Notebook Content
 
