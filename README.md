@@ -25,5 +25,6 @@ From tokenisation on sentence and word level to removing any HTML tags and all t
 * There are many techniques to score sentences. Here I am using TF-IDF short for term frequency–inverse document frequency, is a numerical statistic that is intended to reflect how important a word is to a document in a collection or corpus.
 After getting Sentence Scores, I average the score of all the sentences and took into account only 50 most important sentences from Joe Biden's speech.
 ### Abstractive summarization
+* Abstractive summarization helps reduce the sentence size as it uses fusion to merge the sentences, thus helps achieve more non-redundancy in the summary as compared to the extractive summaries, where even the non-relevant part of sentence also gets included due to the fact that it extracts the sentences and arranges them.
 * Up untill nnow we have extractive summary.
 * Now I am using already pre trained model based on transformers called t5-base to train another model to create a short abstract of extractive summary.
