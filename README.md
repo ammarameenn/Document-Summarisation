@@ -1,13 +1,14 @@
-# Document-Summarisation
-Text generation, which could be used, for instance, in text summarization, is one of the difficulties in natural language processing and comprehension. Actually, it entails comprehending the information a text conveys and condensing it into a brief summary that incorporates the essential, pertinent information. It is obvious that a model works effectively on a text that is condensed and has just clear information and little noise. In this situation, we can use some extractive summarizers as the input of the summarization model to extract significant portions from a given text. I decided to use TFIDF vectoriser to condense the text and extract the most crucial sentences.
-This repository will walk you through two different approaches for summarizing text named abstractive and extractive summarisation using very famous techniques TF-IDF and transfer learning.
-## Notebook Content
+## Inspiration
+Text generation, which could be used, for instance, in text summarization, is one of the difficulties in natural language processing and comprehension. Actually, it entails comprehending the information a text conveys and condensing it into a brief summary that incorporates the essential, pertinent information. 
+## Technique Used
+It is obvious that a model works effectively on a text that is condensed and has just clear information and little noise. In this situation, we can use some extractive summarizers as the input of the summarization model to extract significant portions from a given text. I decided to use TF-IDF vectoriser to condense the text and extract the most crucial sentences. Then abstractive summarisation model is built using transformers which takes output of TF-IDF model as input and generate the abstract as required.
+## Steps to built the summarizer
 
 * Loading Dataset
 * Preprocessing Datatset
-* Extractive Summarization Approach
+* Extractive Summarization Model
   * TF-IDF summarizer
-* Abstractive summarization Approach
+* Abstractive summarization Model
   * t5-base Transformer
 ### Loading Dataset
 The NLTK corpus is a massive dump of all kinds of natural language data sets. Here I am loading Inaugral Dataset which includes Welcome speech of American presidents from 1789 to 2021.
